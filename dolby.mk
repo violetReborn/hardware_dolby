@@ -34,6 +34,7 @@ DEVICE_MANIFEST_FILE += \
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.2.vendor \
+    libstagefright_foundation-v33 \
     libcodec2_soft_common.vendor
 
 # Configs
@@ -46,7 +47,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.dolby.dax.version=DAX3_3.7.0.8_r1 \
     ro.audio.spatializer_enabled=true \
     ro.vendor.audio.dolby.dax.support=true \
-    ro.vendor.audio.dolby.surround.enable=true \
+    ro.vendor.audio.dolby.surround.enable=false \
+    ro.audio.spatializer_transaural_enabled_default=false \
     vendor.audio.dolby.ds2.enabled=false \
     vendor.audio.dolby.ds2.hardbypass=false
 
